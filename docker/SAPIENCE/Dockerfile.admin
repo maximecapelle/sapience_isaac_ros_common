@@ -63,7 +63,10 @@ RUN apt-get update \
         python-is-python3 \
         libpython3-stdlib \
         libtool-bin \
+        libtool \
+        curl \
         zip \
+        unzip \
         default-jre \
         socat \
         ros-dev-tools \
@@ -78,6 +81,9 @@ RUN apt-get update \
         python-numpy \
         tzdata \
         xvfb \
+        automake \
+        autoconf \
+
         ros-humble-joint-state-publisher \
         ros-humble-rqt-tf-tree \
         ros-humble-rviz2 \
@@ -96,5 +102,5 @@ RUN apt-get update \
     ros-${ROS_DISTRO}-geographic-msgs \
     ros-${ROS_DISTRO}-eigen-stl-containers \
     ros-${ROS_DISTRO}-isaac-ros-visual-slam \
+    ros-${ROS_DISTRO}-isaac-ros-unet\
     && rm -rf /var/lib/apt/lists/*
-
