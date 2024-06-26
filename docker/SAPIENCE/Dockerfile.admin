@@ -83,7 +83,6 @@ RUN apt-get update \
         xvfb \
         automake \
         autoconf \
-
         ros-humble-joint-state-publisher \
         ros-humble-rqt-tf-tree \
         ros-humble-rviz2 \
@@ -102,5 +101,6 @@ RUN apt-get update \
     ros-${ROS_DISTRO}-geographic-msgs \
     ros-${ROS_DISTRO}-eigen-stl-containers \
     ros-${ROS_DISTRO}-isaac-ros-visual-slam \
-    ros-${ROS_DISTRO}-isaac-ros-unet\
+    ros-${ROS_DISTRO}-isaac-ros-unet \
+    ros-${ROS_DISTRO}-isaac-ros-image-proc \
     && rm -rf /var/lib/apt/lists/*
