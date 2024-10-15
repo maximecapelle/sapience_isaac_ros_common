@@ -9,7 +9,7 @@ USER root
 RUN wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
 RUN sudo chmod +x install_geographiclib_datasets.sh && ./install_geographiclib_datasets.sh
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --fix-broken \
     libgps-dev \
     && rm -rf /var/lib/apt/lists/*
 
